@@ -1,1 +1,15 @@
-No changelog available. For more details visit www.bam-android.com
+* Bring back updateme notifications on new update available
+* Bring back jellybam statistics at http://www.bam-android.com/stats/
+* Bring back hardware keys custom rebindings
+* Added friendly changelog
+* Revamped Halo style
+* Revamped PIE style
+* Added PIE Monster size
+* Fix some systemUI deadlocks
+* Fix for privaxy guards manager in settings
+* Fix for reboot and power tiles
+* Introducing BAMConfigurator on first boot (only after data wipe)
+* SystemUI restart on alt signal layout option enable/disable
+* Many fix and improvements for HALO
+* Update Google Camera 4.3
+* Temp removed BAMModder that will be full replaced with BAMConfigurator
