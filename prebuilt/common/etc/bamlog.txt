@@ -1,3 +1,8 @@
+v9.1.1
+* Fixed Halo on HDPI devices
+* Fixed Quick Settings tiles crash
+
+v9.1.0
 * Bring back updateme notifications on new update available
 * Bring back jellybam statistics at http://www.bam-android.com/stats/
 * Bring back hardware keys custom rebindings
