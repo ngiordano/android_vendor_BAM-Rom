@@ -1,3 +1,13 @@
+v9.1.2
+* Fix for GMail crash
+* Fix for HALO HDPI size
+* Update PA Prefs to 3.67
+* Configurator fix for hdpi devices
+* Add new tiles style option to set random color to flip tiles
+* New HALO vertical gestures
+* Added back AOSP Keyboard with gestures and HOLOBAM support
+* Update Photosphere camera
+
 v9.1.1
 * Fixed Halo on HDPI devices
 * Fixed Quick Settings tiles crash
