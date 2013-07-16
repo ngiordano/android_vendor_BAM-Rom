@@ -7,8 +7,10 @@
         "revision":     "jbam9"
     },
     {
-   	"repository": "android_kernel_asus_tf300t",
-   	"target_path": "kernel/asus/tf300t",
-        "branch": "jellybean"
+        "remote":       "github",
+        "account":      "CyanogenMod",
+   	"repository":   "android_kernel_asus_tf300t",
+   	"target_path":  "kernel/asus/tf300t",
+        "revision":     "jellybean"
     }
 ]
