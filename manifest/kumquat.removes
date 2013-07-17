@@ -1,6 +1,6 @@
 [
     {
-        "name":     "CyanogenMod/android_frameworks_native",
+        "name":     "android_frameworks_native",
         "path":     "frameworks/native"
     },
     {
@@ -16,7 +16,7 @@
         "path":     "frameworks/av"
     },
     {
-        "name":     "CyanogenMod/android_system_core",
+        "name":     "android_system_core",
         "path":     "system/core"
     },
     {
