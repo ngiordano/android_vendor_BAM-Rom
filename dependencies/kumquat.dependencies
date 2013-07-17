@@ -15,10 +15,10 @@
   },
   {
     "remote": "github",
-    "account": "XperiaPAC",
+    "account": "BAM-Team",
     "repository": "android_device_sony_montblanc-common",
     "target_path": "device/sony/montblanc-common",
-    "revision": "cm-10.1"
+    "revision": "jbam9"
  },
  {
     "remote": "github",
