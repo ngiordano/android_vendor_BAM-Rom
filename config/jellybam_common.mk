@@ -21,6 +21,11 @@ SUPERUSER_EMBEDDED := true
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
 
+
+# SELinux filesystem labels
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/bootanimation/sound.ogg:system/media/sound.ogg \
