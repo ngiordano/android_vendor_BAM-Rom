@@ -131,6 +131,11 @@ PRODUCT_PACKAGES += \
     PerformanceControl \
     PermissionsManager
 
+### CyanogenMod ###
+# CM
+PRODUCT_PACKAGES += \
+    Babel 
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
@@ -142,7 +147,12 @@ PRODUCT_PACKAGES += \
     nano \
     htop \
     powertop \
-    lsof
+    lsof \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
 
 # Openssh
 PRODUCT_PACKAGES += \
