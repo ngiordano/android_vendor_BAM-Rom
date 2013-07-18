@@ -24,7 +24,7 @@ include vendor/pa/config/themes_common.mk
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+    vendor/jellybam/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
