@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/libs/libdhwr.so:system/lib/libdhwr.so \
     vendor/jellybam/prebuilt/common/libs/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so \
     vendor/jellybam/prebuilt/common/libs/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so \
+    vendor/jellybam/prebuilt/common/libs/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/jellybam/prebuilt/common/xml/update_me.xml:system/update_me.xml \
     vendor/jellybam/prebuilt/common/etc/be_movie:system/etc/be_movie \
     vendor/jellybam/prebuilt/common/etc/be_photo:system/etc/be_photo \
