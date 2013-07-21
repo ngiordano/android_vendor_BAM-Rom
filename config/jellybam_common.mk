@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 ### CyanogenMod ###
 # CM
 PRODUCT_PACKAGES += \
-    Babel 
+    VoicePlus 
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
