@@ -1,3 +1,22 @@
+v9.2.0
+* Added support for external GSP sources
+* Added user defined HALO size
+* Fixed some systemui deadlocks
+* Added Maps to gapps configurator
+* Fixed layout issues with Configurator
+* Temporary removed the ability to enable or disable quick settings due to conflicts with swipe ribbons feature
+* Add SELinux filesystem relabeling
+* BAMControl: Welcome header and sharer!
+* Fixed aosp keyboard gestures
+* Fix notification panel settings
+* Fix permissions manager settings
+* Now configurator will run at every flash (dirty/clean)
+* Fix recursive configurator
+* Added custom background overlay
+* Major HALO Update from Paranoid branches
+* Improved signal strenght calibration
+* Added VoicePlus
+
 v9.1.2
 * Fix for GMail crash
 * Fix for HALO HDPI size
