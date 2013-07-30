@@ -115,7 +115,6 @@ cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYT
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/apps/* $REPACK/ota/system/app/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/configurator $REPACK/ota/system/configurator
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/libs/* $REPACK/ota/system/lib/
-mv $REPACK/ota/system/app/Gallery2.apk $REPACK/ota/system/configurator/Gallery2.apk
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/hosts $REPACK/ota/system/etc/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/init.d/* $REPACK/ota/system/etc/init.d/
 
