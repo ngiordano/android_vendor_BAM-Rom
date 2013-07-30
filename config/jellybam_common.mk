@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
 SUPERUSER_EMBEDDED := true
 
 # T-Mobile theme engine
-include vendor/pa/config/themes_common.mk
+include vendor/jellybam/config/themes_common.mk
 
 
 # SELinux filesystem labels
