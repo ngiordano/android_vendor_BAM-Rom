@@ -113,10 +113,17 @@ cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/sys
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/apps/* $REPACK/ota/system/app/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/configurator $REPACK/ota/system/configurator
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/libs/* $REPACK/ota/system/lib/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/hosts $REPACK/ota/system/etc/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/init.d/* $REPACK/ota/system/etc/init.d/
+
+# Install SuperSU
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/supersu/app/* $REPACK/ota/system/app/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/init.d/* $REPACK/ota/system/etc/init.d/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/supersu/bin/* $REPACK/ota/system/bin/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/supersu/xbin/* $REPACK/ota/system/xbin/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/supersu/tools/* $REPACK/ota/system/bin/
+
 
 # Pack it up and sign
 printf "Zipping package..."
