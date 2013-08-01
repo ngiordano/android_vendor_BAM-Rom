@@ -15,11 +15,12 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
     vendor/jellybam/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
+# JELLYBAM-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/etc/init.local.rc:root/init.jellybam.rc
+
 #Embed superuser into settings 
 SUPERUSER_EMBEDDED := true
-
-PRODUCT_PACKAGES += \
-        su
 
 # T-Mobile theme engine
 include vendor/jellybam/config/themes_common.mk
@@ -132,7 +133,8 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    su
 
 # Openssh
 PRODUCT_PACKAGES += \
