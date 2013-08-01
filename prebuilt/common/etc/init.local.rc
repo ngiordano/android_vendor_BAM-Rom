@@ -1,6 +1,13 @@
 # CyanogenMod Extras
 import /init.superuser.rc
 
+
+# su daemon
+service su_daemon /system/xbin/su --daemon
+    class main
+    oneshot
+    disabled
+
 on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
