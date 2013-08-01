@@ -33,30 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/media/audio/ringtones/ModernBam.wav:system/media/audio/ringtones/ModernBam.wav \
     vendor/jellybam/prebuilt/common/media/audio/notifications/Jellybam.ogg:system/media/audio/notifications/Jellybam.ogg \
     vendor/jellybam/prebuilt/common/etc/bamlog.txt:system/etc/bamlog.txt \
-    vendor/jellybam/prebuilt/common/etc/permissions/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
-    vendor/jellybam/prebuilt/common/etc/permissions/touchwiz.xml:system/etc/permissions/touchwiz.xml \
-    vendor/jellybam/prebuilt/common/etc/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
-    vendor/jellybam/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
-    vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
-    vendor/jellybam/prebuilt/common/libs/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
-    vendor/jellybam/prebuilt/common/libs/libjni_mosaic.so:system/lib/libjni_mosaic.so \
-    vendor/jellybam/prebuilt/common/libs/liblightcycle.so:system/lib/liblightcycle.so \
-    vendor/jellybam/prebuilt/common/libs/libglcanvas.so:system/lib/libglcanvas.so \
-    vendor/jellybam/prebuilt/common/libs/libdrawglfunction.so:system/lib/libdrawglfunction.so \
-    vendor/jellybam/prebuilt/common/libs/libdhwr.so:system/lib/libdhwr.so \
-    vendor/jellybam/prebuilt/common/libs/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so \
-    vendor/jellybam/prebuilt/common/libs/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so \
-    vendor/jellybam/prebuilt/common/libs/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/jellybam/prebuilt/common/xml/update_me.xml:system/update_me.xml \
-    vendor/jellybam/prebuilt/common/etc/be_movie:system/etc/be_movie \
-    vendor/jellybam/prebuilt/common/etc/be_photo:system/etc/be_photo \
-    vendor/jellybam/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
-    vendor/jellybam/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
-    vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml \
-    vendor/jellybam/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
-    vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
-    vendor/jellybam/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar \
-    vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
     vendor/jellybam/prebuilt/common/gapps/addon.d/80-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
     vendor/jellybam/prebuilt/common/gapps/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
@@ -78,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/lib/libgoogle_recognizer_jni.so:system/lib/libgoogle_recognizer_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
-    vendor/jellybam/prebuilt/common/gapps/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
