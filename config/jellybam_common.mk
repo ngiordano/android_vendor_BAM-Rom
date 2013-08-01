@@ -18,6 +18,9 @@ PRODUCT_COPY_FILES += \
 #Embed superuser into settings 
 SUPERUSER_EMBEDDED := true
 
+PRODUCT_PACKAGES += \
+        su
+
 # T-Mobile theme engine
 include vendor/jellybam/config/themes_common.mk
 
