@@ -134,4 +134,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.url=http://www.bam-android.com/stats/ \
     ro.romstats.name=JELLYBAM \
     ro.romstats.version=$(BAM_VERSION) \
-    ro.romstats.tframe=7
+    ro.romstats.tframe=7 \
+    ro.build.selinux=1
