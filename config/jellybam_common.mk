@@ -25,6 +25,9 @@ SUPERUSER_EMBEDDED := true
 # T-Mobile theme engine
 include vendor/jellybam/config/themes_common.mk
 
+# Gesture enabled JNI
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
