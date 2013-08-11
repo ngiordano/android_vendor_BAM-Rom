@@ -143,4 +143,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.name=JELLYBAM \
     ro.romstats.version=$(BAM_VERSION) \
     ro.romstats.tframe=7 \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    ro.adb.secure=0 \
+    persist.sys.root_access=3
