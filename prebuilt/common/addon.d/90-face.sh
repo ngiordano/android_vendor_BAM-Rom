@@ -1,27 +1,24 @@
 #!/sbin/sh
 # 
-# /system/addon.d/70-gapps.sh
+# /system/addon.d/71-gapps-faceunlock.sh
 #
+
 . /tmp/backuptool.functions
+
+
+
 
 list_files() {
 cat <<EOF
 app/FaceLock.apk
-framework/com.google.android.maps.jar
-framework/com.google.android.media.effects.jar
-framework/com.google.widevine.software.drm.jar
 lib/libfacelock_jni.so
-lib/libfilterpack_facedetect.so
-lib/libflint_engine_jni_api.so
-lib/libgcomm_jni.so
-media/video/AndroidInSpace.240p.mp4
-media/video/AndroidInSpace.480p.mp4
-media/video/Sunset.240p.mp4
-media/video/Sunset.480p.mp4
-media/LMprec_508.emd
-media/PFFprec_600.emd
-vendor/pittpatt/models/detection/
-vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24.bin
+vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N.bin
 EOF
 }
 
