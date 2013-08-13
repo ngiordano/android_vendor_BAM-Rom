@@ -100,6 +100,16 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
     vendor/jellybam/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
+# ParanoidAndroid Images
+PA_IMAGE_FILES := $(wildcard vendor/pa/prebuilt/preferences/images/*.png)
+PRODUCT_COPY_FILES += \
+    $(foreach f,$(PA_IMAGE_FILES),$(f):system/etc/paranoid/preferences/images/$(notdir $(f)))
+
+# ParanoidAndroid Preferences
+PA_PREF_FILES := $(wildcard vendor/pac/prebuilt/pa/preferences/$(PA_CONF_SOURCE)/*.xml)
+PRODUCT_COPY_FILES += \
+    $(foreach f,$(PA_PREF_FILES),$(f):system/etc/paranoid/preferences/$(notdir $(f)))
+
 BOARD := $(subst jellybam_,,$(TARGET_PRODUCT))
 
 # Add CM release version

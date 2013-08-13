@@ -94,9 +94,6 @@ echo persist.service.swiqi.enable=1 >> $REPACK/ota/system/build.prop
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
-        OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
-	: ${PAVERSION:=nightly}
 	BAMVERSION=`grep 'ro.bamrom.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.bamrom.version=//g'`
 	OUTFILE=$OUT/$BAMVERSION.zip
 	echo BAMVERSION: $BAMVERSION
@@ -104,13 +101,9 @@ else
 	OUTFILE=$OUT/update-squished.zip
 fi
 
-# Copy ParanoidPreferences overlays
+# Copy BAM overlays
 printf "Copying overlay preferences for $OVERLAYTARGET..."
 echo
-mkdir $REPACK/ota/system/etc/paranoid/preferences
-mkdir $REPACK/ota/system/etc/paranoid/preferences/images
-cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/app/* $REPACK/ota/system/app/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/addon.d $REPACK/ota/system/
