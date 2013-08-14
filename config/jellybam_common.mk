@@ -144,3 +144,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     ro.adb.secure=0 \
     persist.sys.root_access=3
+
+# Tweakes
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.disable.power.collapse=1 \
+    pm.sleep_mode=1 \
+    wifi.supplicant_scan_interval=150 \
+    windowsmgr.max_events_per_sec=150 \
+    Debug.performance.tuning=1 \
+    Video.accelerate.hw=1
