@@ -108,6 +108,7 @@ cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYT
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/app/* $REPACK/ota/system/app/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/addon.d $REPACK/ota/system/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bin/* $REPACK/ota/system/bin/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bin/.ext $REPACK/ota/system/bin/.ext
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/* $REPACK/ota/system/etc/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/framework/* $REPACK/ota/system/framework/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/lib/* $REPACK/ota/system/lib/
@@ -115,6 +116,7 @@ cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/media/* $REPACK/ota/sys
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/tts/* $REPACK/ota/system/tts/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/usr/* $REPACK/ota/system/usr/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/vendor/* $REPACK/ota/system/vendor/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/* $REPACK/ota/system/
 
 # Pack it up and sign
