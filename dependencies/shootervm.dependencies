@@ -39,7 +39,7 @@
         "account":      "Team-Hydra",
         "repository":   "linaro",
         "target_path":  "prebuilt/linux-x86/toolchain/linaro",
-        "revision":     "cm-10.2"
+        "revision":     "cm-10.1"
     },
     {
         "remote":       "github",
