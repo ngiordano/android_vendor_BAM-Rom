@@ -25,6 +25,27 @@ SUPERUSER_EMBEDDED := true
 # T-Mobile theme engine
 include vendor/jellybam/config/themes_common.mk
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/jellybam/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/jellybam/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/jellybam/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/jellybam/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/jellybam/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/jellybam/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/jellybam/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/jellybam/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/jellybam/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/jellybam/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
+    vendor/jellybam/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/jellybam/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
+
+# Added xbin files
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/xbin/zip:system/xbin/zip \
+    vendor/jellybam/prebuilt/common/xbin/zipalign:system/xbin/zipalign
+
 # Gesture enabled JNI
 PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
