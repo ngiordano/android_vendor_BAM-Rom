@@ -1,10 +1,13 @@
-<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.png" color="#51ab27">
+<property name="Tablet UI (Big)" active="true" image="/system/etc/paranoid/preferences/images/tablet.png" color="#51ab27">
 
         <description><![CDATA[
-            This will put your device into 182 DPI/1000p Tablet UI, none of your apps will be changed.
+            270 DPI Tablet UI<br/>
+            2 Icons, No Clock<br/>
+            Fat buttons<br/>
+            No apps changed
         ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
-        <setting type="Hybrid" target="com.android.systemui.dpi" value="182"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="270"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="1000"/>
         <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="100"/>
         <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
