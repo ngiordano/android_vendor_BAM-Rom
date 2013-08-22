@@ -2,7 +2,7 @@
 ifeq (jellybam_maserati,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_droid
+OVERLAY_TARGET := pa_hdpi
 
 # AOKP device overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
