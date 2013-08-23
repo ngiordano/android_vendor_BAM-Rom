@@ -62,8 +62,7 @@ PRODUCT_PACKAGES += \
 ### AOKP ###
 # AOKP Packages
 PRODUCT_PACKAGES += \
-    PerformanceControl \
-    PermissionsManager
+    PerformanceControl
 
 ### CyanogenMod ###
 # CM
