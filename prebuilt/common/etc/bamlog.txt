@@ -1,2 +1,26 @@
+v10.1.0:
+* Update Android build to JSS15Q
+* Improved AppOpps
+* Re-designed navigation bar options on bamcontrol and allow the customization of the navbar in tablet ui
+* New statusbar options: Fullscreen statusbar with customizable timeout
+* New notification behaviors option
+* Fix about jellybam
+* Fix HALO in landscape
+* Weather panel now works on tablet UI
+* New animated ADB icon
+* Many new translations
+* Fixed phabletUI
+* Fixed stock browser and screen stuttering (we are currently test this)
+* Ability to customize Navbar in TabletUI
+* Some new HALO things, improvements and graphics changes
+* Fixed a bug that was causing certain apps to FC when a notification appear
+* Fixed JellyBam wallpapers and added AOKP, Paranoid and CyanogenMod wallpapers
+* NEW Tabbed settings! Just like the S4 one!
+* NEW Init.d settings
+* Bring back ListView options
+* Merged CyanogenMod new display and audio settings
+* New .More settings..
+* Bring back Custom vibrations
+
 v10.0.0:
 * First version of JELLYBAM with Android 4.3
