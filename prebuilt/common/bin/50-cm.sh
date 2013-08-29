@@ -1,5 +1,5 @@
 #!/sbin/sh
-#
+# 
 # /system/addon.d/50-cm.sh
 # During a CM10 upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
@@ -10,8 +10,6 @@
 list_files() {
 cat <<EOF
 etc/hosts
-etc/paranoid/properties.conf
-etc/init.d.cfg
 EOF
 }
 

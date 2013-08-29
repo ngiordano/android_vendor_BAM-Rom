@@ -35,7 +35,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/jellybam/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/bam-rom/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -66,15 +66,15 @@ $SED -i \
 	$REPACK/ota/system/build.prop
 
 # Delete JELLYBAM specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/jellybam/tools/squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/jellybam/tools/squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/bam-rom/tools/squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/bam-rom/tools/squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
 
 # Delete target product specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/jellybam/tools/$TARGET_PRODUCT-squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/jellybam/tools/$TARGET_PRODUCT-squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/bam-rom/tools/$TARGET_PRODUCT-squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/bam-rom/tools/$TARGET_PRODUCT-squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
@@ -110,19 +110,17 @@ echo
 mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/app/* $REPACK/ota/system/app/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/addon.d $REPACK/ota/system/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bin/* $REPACK/ota/system/bin/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/* $REPACK/ota/system/etc/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/framework/* $REPACK/ota/system/framework/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/lib/* $REPACK/ota/system/lib/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/media/* $REPACK/ota/system/media/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/tts/* $REPACK/ota/system/tts/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/usr/* $REPACK/ota/system/usr/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/vendor/* $REPACK/ota/system/vendor/
-cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/* $REPACK/ota/system/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/app/* $REPACK/ota/system/app/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/addon.d $REPACK/ota/system/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/bin/* $REPACK/ota/system/bin/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/etc/* $REPACK/ota/system/etc/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/framework/* $REPACK/ota/system/framework/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/lib/* $REPACK/ota/system/lib/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/media/* $REPACK/ota/system/media/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
+cp -r $ANDROID_BUILD_TOP/vendor/bam-rom/prebuilt/common/xml/* $REPACK/ota/system/
 
 # Pack it up and sign
 printf "Zipping package..."
