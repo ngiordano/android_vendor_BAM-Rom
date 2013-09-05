@@ -1,3 +1,22 @@
+v10.2.0:
+* New AOSP build: JWR66Y
+* Many new translations for system applications
+* New appbar from ChameleonOS
+* Hardware Keys: Ability to customize buttons backlight behaviors
+* Bring back AOKP custom vibrations
+* Re-Designed NavBar settings
+* Added ability to customize NavBar width
+* New shortcuts on recent panel
+* Fix screen and browser flickering on some devices including i9100
+* Improved statusbar colors with PA
+* Improved APN settings
+* New Mobile plan manager
+* Fixed Ribbons
+* Improved AppOps
+* Increased general performance via dalvik VM
+* Improved battery life via custom Tweaks
+* Many more changes.
+
 v10.1.0:
 * Update Android build to JSS15Q
 * Improved AppOpps
