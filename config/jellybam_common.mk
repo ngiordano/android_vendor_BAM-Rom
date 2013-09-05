@@ -22,6 +22,9 @@ PRODUCT_COPY_FILES += \
 #Embed superuser into settings 
 SUPERUSER_EMBEDDED := true
 
+# Using Custom ReleaseRool
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := vendor/jellybam/overlay/build/tools/releasetools/ota_from_target_files
+
 # T-Mobile theme engine
 include vendor/jellybam/config/themes_common.mk
 
