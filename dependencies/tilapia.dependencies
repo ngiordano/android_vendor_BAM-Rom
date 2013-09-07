@@ -1,0 +1,23 @@
+[
+  {
+    "remote":       "github",
+    "account":      "temasek",
+    "repository":   "android_device_asus_tilapia",
+    "target_path":  "device/asus/tilapia",
+    "revision":     "cm-10.2"
+  },
+  {
+    "remote":       "github",
+    "account":      "CyanogenMod",
+    "repository":   "android_device_asus_grouper",
+    "target_path":  "device/asus/grouper",
+    "revision":     "cm-10.2"
+  },
+  {
+    "remote":       "github",
+    "account":      "CyanogenMod",
+    "repository":   "android_kernel_asus_grouper",
+    "target_path":  "kernel/asus/grouper",
+    "revision":     "cm-10.2"
+  }
+]
