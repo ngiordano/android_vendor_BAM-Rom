@@ -25,7 +25,7 @@
   },
   {
     "account":      "DerTeufel",
-    "repository":   "android_kernel_samsung_aries",
+    "repository":   "samsung-kernel-aries",
     "target_path":  "kernel/samsung/aries",
     "revision":     "cm-10.2"
   }
