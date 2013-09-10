@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "kasperhettinga",
+        "repository":   "android_frameworks_av",
+        "target_path":  "frameworks/av",
+        "revision":     "mackay-p970-cm102"
+    }
+]
