@@ -1,0 +1,26 @@
+[
+  {
+    "account":      "beegee-tokyo",
+    "repository":   "android_device_samsung_p4",
+    "target_path":  "device/samsung/p4",
+    "revision":     "cm-10.2"
+  },
+  {
+    "account":      "beegee-tokyo",
+    "repository":   "android_device_samsung_p4-common",
+    "target_path":  "device/samsung/p4-common",
+    "revision":     "cm-10.2"
+  },
+  {
+    "account":      "CyanogenMod",
+    "repository":   "android_hardware_samsung",
+    "target_path":  "hardware/samsung",
+    "revision":     "cm-10.2"
+  },
+  {
+    "account":      "beegee-tokyo",
+    "repository":   "android_kernel_samsung_p4_infamous",
+    "target_path":  "kernel/samsung/p4",
+    "revision":     "cm-10.2"
+  }
+]

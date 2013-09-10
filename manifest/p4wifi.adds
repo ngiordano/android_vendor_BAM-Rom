@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "beegee-tokyo",
+        "repository":   "ganbarou_vendor_samsung",
+        "target_path":  "vendor/samsung",
+        "revision":     "cm-10.2"
+    }
+]
