@@ -15,7 +15,7 @@
     "account":      "TeamSXL",
     "repository":   "htc-cm-kernel-doubleshot-34",
     "target_path":  "kernel/htc/doubleshot",
-    "revision":     "master"
+    "revision":     "jellybean-3.4"
   },
   {
     "account":      "TeamSXL",
