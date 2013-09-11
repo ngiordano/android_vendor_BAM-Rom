@@ -9,6 +9,6 @@
     "account":      "maxwen",
     "repository":   "android_kernel_oppo_find5",
     "target_path":  "kernel/oppo/find5",
-    "revision":     "cm-10.2"
+    "revision":     "jb-mr2"
   }
 ]
