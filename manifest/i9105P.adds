@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "KINGbabasula",
+        "repository":   "proprietary_vendor_samsung",
+        "target_path":  "vendor/samsung/i9105P",
+        "revision":     "master"
+    }
+]
