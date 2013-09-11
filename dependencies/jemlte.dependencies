@@ -1,0 +1,37 @@
+[
+  {
+    "remote":       "github",
+    "account":      "CyanogenMod",
+    "repository":   "android_device_amazon_omap4-common",
+    "target_path":  "device/amazon/omap4-common",
+    "revision":     "cm-10.2"
+  },
+  {
+    "remote":       "github",
+    "account":      "KFire-Android",
+    "repository":   "kernel_omap_bowser-common",
+    "target_path":  "kernel/amazon/bowser-common",
+    "revision":     "cm-10.2"
+  },
+  {
+    "remote":       "github",
+    "account":      "KFire-Android",
+    "repository":   "android_device_amazon_bowser-common",
+    "target_path":  "device/amazon/bowser-common",
+    "revision":     "cm-10.2"
+  },
+  {
+    "remote":       "github",
+    "account":      "BAM-Team",
+    "repository":   "android_device_amazon_jem",
+    "target_path":  "device/amazon/jem",
+    "revision":     "jbam10"
+  },
+  {
+    "remote":       "github",
+    "account":      "BAM-Team",
+    "repository":   "android_device_amazon_jemlte",
+    "target_path":  "device/amazon/jemlte",
+    "revision":     "jbam10"
+  }
+]

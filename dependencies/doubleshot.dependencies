@@ -1,0 +1,26 @@
+[
+  {
+    "account":      "TeamSXL",
+    "repository":   "android_device_htc_msm8660-common",
+    "target_path":  "device/htc/msm8660-common",
+    "revision":     "cm-10.2-3.4"
+  },
+  {
+    "account":      "TeamSXL",
+    "repository":   "android_device_htc_doubleshot",
+    "target_path":  "device/htc/doubleshot",
+    "revision":     "cm-10.2-3.4"
+  },
+  {
+    "account":      "TeamSXL",
+    "repository":   "htc-cm-kernel-doubleshot-34",
+    "target_path":  "kernel/htc/doubleshot",
+    "revision":     "jellybean-3.4"
+  },
+  {
+    "account":      "TeamSXL",
+    "repository":   "android_vendor_htc_doubleshot",
+    "target_path":  "vendor/htc/doubleshot",
+    "revision":     "cm-10.2"
+  }
+]

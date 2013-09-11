@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "p990-dev",
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "cm-10.2-newbl"
+    }
+]

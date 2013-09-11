@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "p990-dev",
+        "repository":   "android_device_lge_p990",
+        "target_path":  "device/lge/p990",
+        "revision":     "cm-10.2"
+    }
+]

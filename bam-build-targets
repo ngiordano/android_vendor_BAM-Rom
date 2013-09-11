@@ -1,5 +1,6 @@
 # AMAZON
 jellybam_jem-userdebug jbam10
+jellybam_jemlte-userdebug jbam10
 jellybam_otter-userdebug jbam10
 jellybam_otter2-userdebug jbam10
 jellybam_tate-userdebug jbam10
@@ -12,6 +13,7 @@ jellybam_tilapia-userdebug jbam10
 # HTC
 jellybam_ace-userdebug jbam10
 jellybam_doubleshot-userdebug jbam10
+jellybam_dlx-userdebug jbam10
 jellybam_evita-userdebug jbam10
 jellybam_endeavoru-userdebug jbam10
 jellybam_fireball-userdebug jbam10
@@ -46,6 +48,11 @@ jellybam_spyder-userdebug jbam10
 jellybam_targa-userdebug jbam10
 jellybam_umts_spyder-userdebug jbam10
 jellybam_wingray-userdebug jbam10
+jellybam_xt897-userdebug jbam10
+jellybam_xt897c-userdebug jbam10
+jellybam_xt907-userdebug jbam10
+jellybam_xt925-userdebug jbam10
+jellybam_xt926-userdebug jbam10
 # OPPO
 jellybam_find5-userdebug jbam10
 # SAMSUNG
@@ -62,12 +69,15 @@ jellybam_d710-userdebug jbam10
 jellybam_epicmtd-userdebug jbam10
 jellybam_fascinatemtd-userdebug jbam10
 jellybam_galaxysmtd-userdebug jbam10
+jellybam_galaxysl-userdebug jbam10
 jellybam_hercules-userdebug jbam10
 jellybam_i605-userdebug jbam10
 jellybam_i777-userdebug jbam10
 jellybam_i9100-userdebug jbam10
 jellybam_i9100g-userdebug jbam10
 jellybam_i9103-userdebug jbam10
+jellybam_i9105-userdebug jbam10
+jellybam_i9105P-userdebug jbam10
 jellybam_i9300-userdebug jbam10
 jellybam_i9305-userdebug jbam10
 jellybam_i9500-userdebug jbam10
@@ -80,6 +90,7 @@ jellybam_jfltetmo-userdebug jbam10
 jellybam_jflteusc-userdebug jbam10
 jellybam_jfltevzw-userdebug jbam10
 jellybam_jfltexx-userdebug jbam10
+jellybam_l900-userdebug jbam10
 jellybam_maguro-userdebug jbam10
 jellybam_manta-userdebug jbam10
 jellybam_mesmerizemtd-userdebug jbam10
