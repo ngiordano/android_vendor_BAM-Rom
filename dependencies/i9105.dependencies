@@ -11,7 +11,7 @@
         "account":      "sssemil",
         "repository":   "android_kernel_samsung_i9105",
         "target_path":  "kernel/samsung/i9105",
-        "revision":     "master"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
