@@ -21,6 +21,13 @@
     	"revision": "cm-10.2"
     },
     {
+        "remote": "github",
+        "account": "CyanogenMod",
+        "repository": "android_device_samsung_jfltexx",
+        "target_path": "device/samsung/jfltexx",
+        "revision": "cm-10.2"
+    },
+    {
     	"remote": "github",
     	"account": "CyanogenMod",
     	"repository": "android_device_samsung_jf-common",
