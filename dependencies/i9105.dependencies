@@ -1,17 +1,17 @@
 [
     {
         "remote":       "github",
-        "account":      "KINGbabasula",
-        "repository":   "android_device_samsung_i9105P",
-        "target_path":  "device/samsung/i9105P",
+        "account":      "sssemil",
+        "repository":   "android_device_samsung_i9105",
+        "target_path":  "device/samsung/i9105",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "KINGbabasula",
-        "repository":   "android_kernel_samsung_i9105P",
-        "target_path":  "kernel/samsung/i9105P",
-        "revision":     "master"
+        "account":      "sssemil",
+        "repository":   "android_kernel_samsung_i9105",
+        "target_path":  "kernel/samsung/i9105",
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
@@ -22,9 +22,9 @@
     },
     {
         "remote":       "github",
-        "account":      "KINGbabasula",
-        "repository":   "android_vendor_samsung_i9105P",
-        "target_path":  "vendor/samsung/i9105P",
+        "account":      "sssemil",
+        "repository":   "android_vendor_samsung_i9105",
+        "target_path":  "vendor/samsung/i9105",
         "revision":     "master"
     }
 ]
