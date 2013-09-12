@@ -1,5 +1,6 @@
 system/app/CMUpdater.apk
 system/app/Home.apk
+system/app/MmsAppTests.apk
 system/app/PinyinIME.apk
 system/etc/CHANGELOG-CM.txt
 system/etc/init.d/00banner
