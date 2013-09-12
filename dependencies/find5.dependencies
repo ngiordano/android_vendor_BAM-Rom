@@ -1,14 +1,14 @@
 [
   {
-    "account":      "maxwen",
+    "account":      "BAM-Team",
     "repository":   "android_device_oppo_find5",
     "target_path":  "device/oppo/find5",
-    "revision":     "cm-10.2"
+    "revision":     "jbam10"
   },
   {
-    "account":      "maxwen",
+    "account":      "CyanogenMod",
     "repository":   "android_kernel_oppo_find5",
     "target_path":  "kernel/oppo/find5",
-    "revision":     "jb-mr2"
+    "revision":     "cm-10.2"
   }
 ]
