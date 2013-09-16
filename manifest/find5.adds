@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "maxwen",
+        "repository":   "proprietary_vendor_oppo",
+        "target_path":  "vendor/oppo",
+        "revision":     "cm-10.2"
+    }
+]
