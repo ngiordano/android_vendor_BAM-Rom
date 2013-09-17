@@ -1,15 +1,15 @@
 [
   {
-    "account":      "Atrix2-Dev-Team",
+    "account":      "CyanogenMod",
     "repository":   "android_device_motorola_edison",
     "target_path":  "device/motorola/edison",
     "revision":     "cm-10.2"
   },
   {
-    "account":      "BAM-Team",
+    "account":      "PAC-Moto",
     "repository":   "android_device_motorola_omap4-common",
     "target_path":  "device/motorola/omap4-common",
-    "revision":     "jbam10"
+    "revision":     "cm-10.2"
   },
   {
     "account":      "CyanogenMod",
