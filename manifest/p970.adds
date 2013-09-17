@@ -11,6 +11,6 @@
         "account":      "CyanogenMod",
         "repository":   "android_external_wpa_supplicant_6",
         "target_path":  "external/wpa_supplicant_6",
-        "revision":     "cm-10.2"
+        "revision":     "cm-10.1"
     }
 ]
