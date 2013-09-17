@@ -1,0 +1,23 @@
+[
+    {
+        "remote":      "github",
+        "account":     "CyanogenMod",
+        "repository":  "android_kernel_samsung_crespo",
+        "target_path": "kernel/samsung/crespo",
+        "revision":    "cm-10.2"
+    },
+    {
+        "remote":      "github",
+        "account":     "BAM-Team",
+        "repository":  "android_device_samsung_crespo",
+        "target_path": "device/samsung/crespo",
+        "revision":    "jbam10"
+    },
+    {
+        "remote":      "github",
+        "account":     "CyanogenMod",
+        "repository":  "android_device_samsung_crespo4g",
+        "target_path": "device/samsung/crespo4g",
+        "revision":    "cm-10.2"
+    }
+]
