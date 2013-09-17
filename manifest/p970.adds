@@ -5,5 +5,12 @@
         "repository":   "android_frameworks_av",
         "target_path":  "frameworks/av",
         "revision":     "mackay-p970-cm102"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_wpa_supplicant_6",
+        "target_path":  "external/wpa_supplicant_6",
+        "revision":     "cm-10.2"
     }
 ]
