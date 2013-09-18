@@ -2,8 +2,8 @@
     {
       "remote":  "github",
       "account": "CyanogenMod",
-      "repository":  "android_device_motorola_maserati",
-      "target_path":  "device/motorola/maserati",
+      "repository":  "android_device_motorola_spyder",
+      "target_path":  "device/motorola/spyder",
       "revision":  "cm-10.2"
    },
     {
