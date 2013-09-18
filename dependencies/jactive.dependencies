@@ -29,10 +29,10 @@
     },
     {
         "remote":       "github",
-        "account":      "CyanogenMod",
+        "account":      "tpruvot",
         "repository":   "android_kernel_samsung_jf",
         "target_path":  "kernel/samsung/jf",
-        "revision":     "cm-10.2"
+        "revision":     "jactive-cm-10.2"
     },
     {
         "remote":       "github",
