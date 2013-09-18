@@ -1,9 +1,0 @@
-[
-    {
-        "remote":       "github",
-        "account":      "Team-Hydra",
-        "repository":   "android_hardware_libhardware_legacy",
-        "target_path":  "hardware/libhardware_legacy",
-        "revision":     "cm-10.2"
-    }
-]
