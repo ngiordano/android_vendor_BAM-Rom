@@ -1,12 +1,6 @@
 [
   {
-    "account":      "PAC-samsung",
-    "repository":   "proprietary_vendor_samsung_i9500",
-    "target_path":  "vendor/samsung/i9500",
-    "revision":     "cm-10.2"
-  },
-  {
-    "account":      "PAC-samsung",
+    "account":      "intervigilium",
     "repository":   "android_device_samsung_i9500",
     "target_path":  "device/samsung/i9500",
     "revision":     "cm-10.2"
