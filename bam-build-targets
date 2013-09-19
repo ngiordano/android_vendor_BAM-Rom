@@ -7,9 +7,15 @@ jellybam_tate-userdebug jbam10
 # ASUS
 jellybam_flo-userdebug jbam10
 jellybam_grouper-userdebug jbam10
+jellybam_tf101-userdebug jbam10
+jellybam_tf201-userdebug jbam10
 jellybam_tf300t-userdebug jbam10
 jellybam_tf700t-userdebug jbam10
 jellybam_tilapia-userdebug jbam10
+# BARNES & NOBLE
+jellybam_acclaim-userdebug jbam10
+jellybam_encore-userdebug jbam10
+jellybam_hummingbird-userdebug jbam10
 # HTC
 jellybam_ace-userdebug jbam10
 jellybam_doubleshot-userdebug jbam10
@@ -32,6 +38,8 @@ jellybam_shootervm-userdebug jbam10
 jellybam_ville-userdebug jbam10
 # LGE
 jellybam_e975-userdebug jbam10
+jellybam_e980-userdebug jbam10
+jellybam_ls970-userdebug jbam10
 jellybam_mako-userdebug jbam10
 jellybam_p760-userdebug jbam10
 jellybam_p920-userdebug jbam10
@@ -44,10 +52,13 @@ jellybam_edison-userdebug jbam10
 jellybam_everest-userdebug jbam10
 jellybam_maserati-userdebug jbam10
 jellybam_mb886-userdebug jbam10
+jellybam_scorpionmini-userdebug jbam10
 jellybam_solana-userdebug jbam10
 jellybam_spyder-userdebug jbam10
 jellybam_targa-userdebug jbam10
 jellybam_umts_spyder-userdebug jbam10
+jellybam_vanquish-userdebug jbam10
+jellybam_vanquishgsm-userdebug jbam10
 jellybam_wingray-userdebug jbam10
 jellybam_xt897-userdebug jbam10
 jellybam_xt897c-userdebug jbam10
@@ -57,6 +68,7 @@ jellybam_xt926-userdebug jbam10
 # OPPO
 jellybam_find5-userdebug jbam10
 # SAMSUNG
+jellybam_apexqtmo-userdebug jbam10
 jellybam_crespo-userdebug jbam10
 jellybam_crespo4g-userdebug jbam10
 jellybam_d2att-userdebug jbam10
@@ -83,6 +95,7 @@ jellybam_i9105P-userdebug jbam10
 jellybam_i9300-userdebug jbam10
 jellybam_i9305-userdebug jbam10
 jellybam_i9500-userdebug jbam10
+jellybam_jactive-userdebug jbam10
 jellybam_jflteatt-userdebug jbam10
 jellybam_jfltecan-userdebug jbam10
 jellybam_jfltecri-userdebug jbam10
@@ -107,16 +120,18 @@ jellybam_p4-userdebug jbam10
 jellybam_p4wifi-userdebug jbam10
 jellybam_p5100-userdebug jbam10
 jellybam_p5110-userdebug jbam10
+jellybam_p5113-userdebug jbam10
 jellybam_quincyatt-userdebug jbam10
 jellybam_r950-userdebug jbam10
 jellybam_skyrocket-userdebug jbam10
 jellybam_t0lte-userdebug jbam10
 jellybam_t0lteatt-userdebug jbam10
+jellybam_t0ltecdma-userdebug jbam10
 jellybam_t0ltetmo-userdebug jbam10
 jellybam_toro-userdebug jbam10
 jellybam_toroplus-userdebug jbam10
 jellybam_vibrantmtd-userdebug jbam10
-# Sony
+# SONY
 jellybam_kumquat-userdebug jbam10
 jellybam_mint-userdebug jbam10
 jellybam_odin-userdebug jbam10
