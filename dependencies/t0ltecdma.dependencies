@@ -20,7 +20,7 @@
   {
     "account":      "CyanogenMod",
     "repository":   "android_device_samsung_t0ltecdma",
-    "target_path":  "device/samsung/t0ltetmo",
+    "target_path":  "device/samsung/t0ltecdma",
     "revision":     "cm-10.2"
   },
   {
