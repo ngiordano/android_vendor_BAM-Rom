@@ -14,6 +14,8 @@ jellybam_tf700t-userdebug jbam10
 jellybam_tilapia-userdebug jbam10
 # BARNES & NOBLE
 jellybam_acclaim-userdebug jbam10
+jellybam_encore-userdebug jbam10
+jellybam_hummingbird-userdebug jbam10
 # HTC
 jellybam_ace-userdebug jbam10
 jellybam_doubleshot-userdebug jbam10
@@ -36,6 +38,7 @@ jellybam_shootervm-userdebug jbam10
 jellybam_ville-userdebug jbam10
 # LGE
 jellybam_e975-userdebug jbam10
+jellybam_e980-userdebug jbam10
 jellybam_ls970-userdebug jbam10
 jellybam_mako-userdebug jbam10
 jellybam_p760-userdebug jbam10
@@ -117,6 +120,7 @@ jellybam_p4-userdebug jbam10
 jellybam_p4wifi-userdebug jbam10
 jellybam_p5100-userdebug jbam10
 jellybam_p5110-userdebug jbam10
+jellybam_p5113-userdebug jbam10
 jellybam_quincyatt-userdebug jbam10
 jellybam_r950-userdebug jbam10
 jellybam_skyrocket-userdebug jbam10
