@@ -1,8 +1,8 @@
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=ModernBam.wav \
-  ro.config.notification_sound=Jellybam.ogg \
-  ro.config.alarm_alert=Cesium.ogg
+    ro.config.ringtone=Orion.ogg \
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
