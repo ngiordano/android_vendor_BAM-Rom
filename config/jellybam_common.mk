@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
 ### CyanogenMod ###
 # CM
 PRODUCT_PACKAGES += \
-    VoicePlus 
+    VoicePlus \
+    Focal
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
