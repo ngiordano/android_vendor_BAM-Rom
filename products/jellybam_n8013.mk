@@ -2,7 +2,7 @@
 ifeq (jellybam_n8013,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_51xx
+OVERLAY_TARGET := pa_n80xx
 
 # AOKP device overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
