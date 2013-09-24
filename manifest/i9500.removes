@@ -2,5 +2,9 @@
     {
         "name":   "TheMuppets/proprietary_vendor_samsung",
         "path":   "vendor/samsung"
+    },
+    {
+        "name":   "CyanogenMod/android_hardware_samsung_slsi_exynos5",
+        "path":   "hardware/samsung_slsi/exynos5"
     }
 ]
