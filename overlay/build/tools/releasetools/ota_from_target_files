@@ -444,16 +444,15 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.Print("#                                  #");
   script.Print("# Developer: iGio90                #");
   script.Print("# BAM-Team: Bliss91, MVODESIGN,    #");
-  script.Print("#           Deodexed, ChemoNL,     #");
-  script.Print("#           Spider                 #");
+  script.Print("#           Deodexed, ChemoNL     #");
   script.Print("#                                  #");
   script.Print("# WebSite: bam-android.com         #");
-  script.Print("# Facebook: facebook.com/JellyBam  #");
+  script.Print("# Facebook: facebook.com/BAMRom    #");
   script.Print("#                                  #");
   script.Print("# --Details----------------------- #");
   script.Print("#                                  #");
-  jellybamv = GetBuildProp("ro.jellybam.version", OPTIONS.info_dict)
-  script.Print("# Version: %s"%(jellybamv));
+  bamv = GetBuildProp("ro.bam.version", OPTIONS.info_dict)
+  script.Print("# Version: %s"%(bamv));
   device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
   model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
   script.Print("# Device: %s (%s)"%(model, device));
