@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
-    <RomName>JellyBam</RomName>
-    <RomVersion>10.4.1</RomVersion>
+    <RomName>BAM-Rom</RomName>
+    <RomVersion>1.0.0-RC1</RomVersion>
     <RomCheckUrl>http://www.bam-android.com/update_me.xml</RomCheckUrl>
 	<OtaUid>2410199000123455</OtaUid>
     <RebootRecovery>0</RebootRecovery>
