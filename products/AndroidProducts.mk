@@ -1,3 +1,3 @@
-ifneq ($(filter bam-rom_%,$(TARGET_PRODUCT)),)
+ifneq ($(filter bam_%,$(TARGET_PRODUCT)),)
 PRODUCT_MAKEFILES += $(LOCAL_DIR)/$(TARGET_PRODUCT).mk
 endif

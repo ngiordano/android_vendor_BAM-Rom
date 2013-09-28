@@ -99,7 +99,7 @@ def add_to_manifest(repositories):
 
 def fetch_extras(def_file):
     print 'Looking for add projects entries'
-    projects_path = 'vendor/bam-rom/manifest/' + def_file
+    projects_path = 'vendor/bam/manifest/' + def_file
 
     syncable_repos = []
 
