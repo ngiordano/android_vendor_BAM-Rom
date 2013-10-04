@@ -1,5 +1,5 @@
 # Check for target product
-ifeq (bam_galaxybsmtd,$(TARGET_PRODUCT))
+ifeq (bam_galaxysbmtd,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_hdpi
@@ -11,9 +11,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
 include vendor/bam/config/bam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/samsung/galaxybsmtd/cm.mk)
+$(call inherit-product, device/samsung/galaxysbmtd/cm.mk)
 
-PRODUCT_NAME := bam_galaxybsmtd
+PRODUCT_NAME := bam_galaxysbmtd
 
 # Update local_manifest.xml
 GET_PROJECT_RMS := $(shell vendor/bam/tools/removeprojects.py $(PRODUCT_NAME))
