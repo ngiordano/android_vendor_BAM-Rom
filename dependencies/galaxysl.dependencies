@@ -14,7 +14,7 @@
   {
     "account":    "dhiru1602",
     "repository": "android_vendor_samsung_galaxysl",
-    "target_path": "vendor/samsung-extra/galaxysl",
+    "target_path": "vendor/samsung/galaxysl",
     "revision":    "cm-10.2"
   }
 ]
