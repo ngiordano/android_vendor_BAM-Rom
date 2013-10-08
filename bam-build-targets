@@ -37,6 +37,8 @@ bam_shooteru-userdebug jellybean
 bam_shootervm-userdebug jellybean
 bam_ville-userdebug jellybean
 # LGE
+bam_e970-userdebug jellybean
+bam_e973-userdebug jellybean
 bam_e975-userdebug jellybean
 bam_e980-userdebug jellybean
 bam_ls970-userdebug jellybean
@@ -66,6 +68,7 @@ bam_xt926-userdebug jellybean
 bam_find5-userdebug jellybean
 # SAMSUNG
 bam_apexqtmo-userdebug jellybean
+bam_captivatemtd-userdebug jellybean
 bam_crespo-userdebug jellybean
 bam_crespo4g-userdebug jellybean
 bam_d2att-userdebug jellybean
