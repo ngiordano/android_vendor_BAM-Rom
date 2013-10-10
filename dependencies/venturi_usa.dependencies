@@ -1,0 +1,20 @@
+[
+  {
+    "account":    "JackpotClavin",
+    "repository": "android_device_samsung_venturi_usa",
+    "target_path": "device/samsung/venturi_usa",
+    "revision":    "cm-10.2"
+  },
+  {
+    "account":    "JackpotClavin",
+    "repository": "android_kernel_samsung_venturi",
+    "target_path": "kernel/samsung/venturi",
+    "revision":    "cm-10.2"
+  },
+  {
+    "account":    "JackpotClavin",
+    "repository": "android_vendor_samsung_venturi_usa",
+    "target_path": "vendor/samsung/venturi_usa",
+    "revision":    "cm-10.2"
+  }
+]
