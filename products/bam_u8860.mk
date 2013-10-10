@@ -11,7 +11,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
 include vendor/bam/config/bam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/huawey/u8860/cm.mk)
+$(call inherit-product, device/huawei/u8860/cm.mk)
 
 # vendor hack
 $(call vendor-replace,huawei,u8860)
