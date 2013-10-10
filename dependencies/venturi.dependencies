@@ -1,0 +1,20 @@
+[
+  {
+    "account":    "iurnait",
+    "repository": "android_device_samsung_venturi",
+    "target_path": "device/samsung/venturi",
+    "revision":    "cm-10.2"
+  },
+  {
+    "account":    "iurnait",
+    "repository": "android_kernel_samsung_venturi",
+    "target_path": "kernel/samsung/venturi",
+    "revision":    "3.0Venturi-cm10.2"
+  },
+  {
+    "account":    "iurnait",
+    "repository": "android_vendor_samsung_venturi",
+    "target_path": "vendor/samsung/venturi",
+    "revision":    "cm-10.2"
+  }
+]
