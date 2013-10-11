@@ -20,7 +20,7 @@
 	{
         "account":      "CyanCom",
         "repository":   "android_vendor_huawei_u8860",
-        "target_path":  "vendor/huawei-extra/u8860",
+        "target_path":  "vendor/huawei/u8860",
         "revision":     "cm-10.2"
     },
 	{
