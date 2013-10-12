@@ -6,9 +6,9 @@
         "revision":     "cm-10.2"
     },
     {
-        "account":      "zyonee",
+        "account":      "ModdedPA",
         "repository":   "android_kernel_google_msm",
         "target_path":  "kernel/google/msm",
-        "revision":     "cm-10.2"
+        "revision":     "aosp"
     }
 ]
