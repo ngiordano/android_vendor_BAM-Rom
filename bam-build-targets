@@ -17,6 +17,8 @@ bam_acclaim-userdebug jellybean
 bam_encore-userdebug jellybean
 bam_hummingbird-userdebug jellybean
 bam_ovation-userdebug jellybean
+# GOOGLE
+bam_steelhead-userdebug jellybean
 # HTC
 bam_ace-userdebug jellybean
 bam_doubleshot-userdebug jellybean
@@ -143,6 +145,7 @@ bam_toro-userdebug jellybean
 bam_toroplus-userdebug jellybean
 bam_venturi-userdebug jellybean
 bam_vibrantmtd-userdebug jellybean
+bam_ypg1-userdebug jellybean
 # SONY
 bam_honami-userdebug jellybean
 bam_kumquat-userdebug jellybean
