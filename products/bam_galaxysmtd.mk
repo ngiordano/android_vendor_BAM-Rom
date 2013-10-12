@@ -5,7 +5,7 @@ ifeq (bam_galaxysmtd,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_hdpi
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/galaxysmtd
 
 # include JELLYBAM common configuration
 include vendor/bam/config/bam_common.mk

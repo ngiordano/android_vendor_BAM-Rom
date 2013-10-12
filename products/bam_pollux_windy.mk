@@ -5,7 +5,7 @@ ifeq (bam_pollux_windy,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_pollux
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/pollux
 
 # include JELLYBAM common configuration
 include vendor/bam/config/bam_common.mk

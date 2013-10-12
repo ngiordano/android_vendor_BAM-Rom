@@ -5,7 +5,7 @@ ifeq (bam_tf201,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_p31xx
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common_tablet
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/tf201
 
 # include JELLYBAM common configuration
 include vendor/bam/config/bam_common.mk

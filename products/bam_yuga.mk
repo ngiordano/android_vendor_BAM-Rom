@@ -5,7 +5,7 @@ ifeq (bam_yuga,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_yuga
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/yuga
 
 # include JELLYBAM common configuration
 include vendor/bam/config/bam_common.mk

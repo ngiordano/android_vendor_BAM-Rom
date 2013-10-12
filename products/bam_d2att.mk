@@ -5,9 +5,9 @@ ifeq (bam_d2att,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_d2
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/d2-common
 
-# include JELLYBAM common configuration
+# include JELLYBAM d2-common configuration
 include vendor/bam/config/bam_common.mk
 
 # Inherit CM device configuration

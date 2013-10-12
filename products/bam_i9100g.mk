@@ -5,7 +5,7 @@ ifeq (bam_i9100g,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_hdpi
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/common
 
 # include JELLYBAM common configuration
 include vendor/bam/config/bam_common.mk
