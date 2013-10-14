@@ -8,16 +8,9 @@
     },
     {
         "remote": "github",
-        "account": "zyonee",
+        "account": "CyanogenMod",
         "repository": "android_kernel_google_msm",
         "target_path": "kernel/google/msm",
         "revision": "cm-10.2"
-    },
-    {
-        "remote": "github",
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_lge",
-        "target_path":  "vendor/lge",
-        "revision":     "cm-10.2"
     }
 ]
