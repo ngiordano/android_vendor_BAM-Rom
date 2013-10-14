@@ -15,6 +15,7 @@ etc/preferred-apps/google.xml
 framework/com.google.widevine.software.drm.jar
 framework/com.google.android.media.effects.jar
 framework/com.google.android.maps.jar
+app/MusicFX.apk
 app/Vending.apk
 app/GoogleOneTimeInitializer.apk
 app/LatinImeDictionaryPack.apk
