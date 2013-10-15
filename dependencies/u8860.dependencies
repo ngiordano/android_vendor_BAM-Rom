@@ -21,6 +21,6 @@
         "account":      "CyanCom",
         "repository":   "android_kernel_huawei_msm7x30-common",
         "target_path":  "kernel/huawei/msm7x30-common",
-        "revision":     "cm-10.2"
+        "revision":     "jellybean"
     }
 ]
