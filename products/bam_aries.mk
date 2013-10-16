@@ -2,7 +2,7 @@
 ifeq (bam_aries,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_hdpi
+OVERLAY_TARGET := pa_xxhdpi
 
 # AOKP device overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/common
