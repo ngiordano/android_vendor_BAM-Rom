@@ -1,0 +1,26 @@
+[
+    {
+        "account":      "Dazzozo",
+        "repository":   "android_device_huawei_u8815",
+        "target_path":  "device/huawei/u8815",
+        "revision":     "cm-10.2"
+    },
+    {
+        "account":      "Dazzozo",
+        "repository":   "android_kernel_huawei_u8815",
+        "target_path":  "kernel/huawei/u8815",
+        "revision":     "cm-10.2"
+    },
+    {
+        "account":      "Dazzozo",
+        "repository":   "proprietary_vendor_huawei",
+        "target_path":  "vendor/huawei",
+        "revision":     "cm-10.2"
+    },
+    {
+        "account":      "Dazzozo",
+        "repository":   "android_hardware_atheros_wifi_ath6kl-huawei",
+        "target_path":  "hardware/atheros/wifi/ath6kl-huawei",
+        "revision":     "master"
+    }
+]
