@@ -17,10 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/bam/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
     vendor/bam/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
-# BAM-Rom-specific init file
-PRODUCT_COPY_FILES += \
-    vendor/bam/prebuilt/common/etc/init.local.rc:root/init.bam.rc
-
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
