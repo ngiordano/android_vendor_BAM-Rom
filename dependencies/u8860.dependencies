@@ -18,9 +18,9 @@
         "revision":     "cm-10.2"
     },
     {
-        "account":      "CyanCom",
-        "repository":   "android_kernel_huawei_msm7x30-common",
-        "target_path":  "kernel/huawei/msm7x30-common",
-        "revision":     "jellybean"
+        "account":      "randomblame",
+        "repository":   "kernel_u8800pro",
+        "target_path":  "kernel/huawei/honor",
+        "revision":     "bcm4329"
     }
 ]
