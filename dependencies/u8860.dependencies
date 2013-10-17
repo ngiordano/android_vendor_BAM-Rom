@@ -9,7 +9,7 @@
         "account":      "Herna1994",
         "repository":   "android_device_huawei_msm7x30-common",
         "target_path":  "device/huawei/msm7x30-common",
-        "revision":     "cm-10.2"
+        "revision":     "cm10.2"
     },
     {
         "account":      "CyanCom",
