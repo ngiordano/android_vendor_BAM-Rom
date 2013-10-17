@@ -1,12 +1,12 @@
 [
     {
-        "account":      "CyanCom",
+        "account":      "Herna1994",
         "repository":   "android_device_huawei_u8860",
         "target_path":  "device/huawei/u8860",
-        "revision":     "pac-4.3"
+        "revision":     "cm-10.2"
     },
-	{
-        "account":      "CyanCom",
+    {
+        "account":      "Herna1994",
         "repository":   "android_device_huawei_msm7x30-common",
         "target_path":  "device/huawei/msm7x30-common",
         "revision":     "cm-10.2"
@@ -14,7 +14,7 @@
     {
         "account":      "CyanCom",
         "repository":   "android_vendor_huawei_u8860",
-        "target_path":  "vendor/huawei/u8860",
+        "target_path":  "vendor/huawei-extra/u8860",
         "revision":     "cm-10.2"
     },
     {
