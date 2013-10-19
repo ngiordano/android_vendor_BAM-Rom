@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>BAM-Rom</RomName>
-    <RomVersion>1.0.0-RC2</RomVersion>
+    <RomVersion>1.0.0-RC3</RomVersion>
     <RomCheckUrl>http://www.bam-android.com/update_me.xml</RomCheckUrl>
 	<OtaUid>2410199000123455</OtaUid>
     <RebootRecovery>0</RebootRecovery>
