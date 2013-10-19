@@ -26,13 +26,6 @@
         "repository": "android_kernel_motorola_msm8960-common",
         "target_path": "kernel/motorola/msm8960-common",
         "revision": "cm-10.2"
-    },
-    {
-        "remote": "github",
-        "account": "TheMuppets",
-        "repository": "proprietary_vendor_motorola",
-        "target_path": "vendor/motorola",
-        "revision": "cm-10.2"
     }
 ]
 

@@ -12,12 +12,6 @@
         "revision":     "cm-10.2"
     },
     {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_asus",
-        "target_path":  "vendor/asus",
-        "revision":     "cm-10.2"
-    },
-    {
         "account":      "ModdedPA",
         "repository":   "android_kernel_google_msm",
         "target_path":  "kernel/google/msm-flo",
