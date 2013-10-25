@@ -6,9 +6,9 @@
         "revision":     "cm-10.2"
     },
     {
-        "account":      "ModdedPA",
+        "account":      "CyanogenMod",
         "repository":   "android_kernel_google_msm",
         "target_path":  "kernel/google/msm",
-        "revision":     "aosp"
+        "revision":     "cm-10.2"
     }
 ]
