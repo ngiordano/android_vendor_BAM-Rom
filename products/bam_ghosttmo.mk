@@ -11,7 +11,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/device/xhdpi
 include vendor/bam/config/bam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/motorola/xt1058/cm.mk)
+$(call inherit-product, device/motorola/xt1053/cm.mk)
 
 PRODUCT_NAME := bam_ghosttmo
 
