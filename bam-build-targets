@@ -62,6 +62,9 @@ bam_vs920-userdebug jellybean
 # MOTOROLA
 bam_edison-userdebug jellybean
 bam_everest-userdebug jellybean
+bam_ghostgsm-userdebug jellybean
+bam_ghosttmo-userdebug jellybean
+bam_ghostvzw-userdebug jellybean
 bam_maserati-userdebug jellybean
 bam_mb886-userdebug jellybean
 bam_solana-userdebug jellybean
