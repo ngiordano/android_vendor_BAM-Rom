@@ -118,6 +118,7 @@ cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/etc/* $REPACK/ota/system/etc
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/framework/* $REPACK/ota/system/framework/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/lib/* $REPACK/ota/system/lib/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/media/* $REPACK/ota/system/media/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/priv-app $REPACK/ota/system/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xml/* $REPACK/ota/system/
 
