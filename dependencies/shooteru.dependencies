@@ -17,7 +17,7 @@
         "remote":       "github",
         "account":      "johnnyslt",
         "repository":   "android_kernel_htc_msm8660",
-        "target_path":  "kernel/htc/msm8660",
+        "target_path":  "kernel/htc/shooteru",
         "revision":     "cm-10.2"
     },
     {
