@@ -189,7 +189,7 @@ BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENAN
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bam.version=$(BAM_VERSION) \
-    ro.bam-rom.version=BAM-Rom_v$(BAM_VERSION)_JellyBean-$(BOARD) \
+    ro.bam-rom.version=BAM-Rom_v$(BAM_VERSION)_KitKat-$(BOARD) \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
