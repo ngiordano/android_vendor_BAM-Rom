@@ -200,5 +200,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.version=$(BAM_VERSION) \
     ro.romstats.tframe=7 \
     ro.build.selinux=1 \
-    ro.adb.secure=0 \
+    ro.adb.secure=3 \
     persist.sys.root_access=3
