@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Squish a CM otapackage for distribution
 # cyanogen
 #
+
+. ${ANDROID_BUILD_TOP}/vendor/bam/tools/colors
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
@@ -19,7 +21,7 @@ else
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
-	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	echo -e ${red}"ERROR: $0 only works with a full build environment. $OUT should exist."${txtrst}
 	exit 1
 fi
 
@@ -31,7 +33,7 @@ else
     OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
 fi
 if [ ! -f "$OTAPACKAGE" ]; then
-	echo "$OTAPACKAGE doesn't exist!";
+	echo -e ${red}"$OTAPACKAGE doesn't exist!"${txtrst};
 	exit 1
 fi
 
@@ -40,19 +42,18 @@ QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
 REPACK=$OUT/repack.d
-printf "Sanitizing environment..."
+echo -e ${bldcya}"Sanitizing environment..."${txtrst}
 rm -rf $REPACK
 mkdir -p $REPACK
-echo
 
 
 # Unpack the otapackage and opticharge all apks
 mkdir $REPACK/ota
 (
 cd $REPACK/ota
-printf "Unpacking $OTAPACKAGE..."
+echo -e ${bldgrn}"Unpacking${txtrst}: ${grn}$OTAPACKAGE..."${txtrst}
 unzip $QUIET $OTAPACKAGE
-echo
+echo -e ""
 cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
 cd $REPACK/ota/system/app
@@ -65,7 +66,7 @@ $SED -i \
 	-e '/ro\.build\.type/s/eng/user/' \
 	$REPACK/ota/system/build.prop
 
-# Delete JELLYBAM specific files
+# Delete BAM specific files
 if [ -f $ANDROID_BUILD_TOP/vendor/bam/tools/squisher.rm ]; then
 	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/bam/tools/squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
@@ -89,63 +90,48 @@ rm -rf $REPACK/ota/recovery
 [ -d $REPACK/ota/system/lib/modules ] && \
 	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
 
-echo ro.service.swiqi.supported=true >> $REPACK/ota/system/build.prop
-echo persist.service.swiqi.enable=1 >> $REPACK/ota/system/build.prop
-
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
-        OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
-	: ${PAVERSION:=nightly}
 	BAMVERSION=`grep 'ro.bam-rom.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.bam-rom.version=//g'`
+	ABIGEN=`grep 'ro.product.cpu.abi=' $REPACK/ota/system/build.prop | sed -e 's/ro.product.cpu.abi=//g'`
 	OUTFILE=$OUT/$BAMVERSION.zip
-	echo BAMVERSION: $BAMVERSION
+	echo -e ""; echo -e "${bldgrn}B${bldppl}A${bldblu}M${bldylw}-VERSION${txtrst}:${cya} $BAMVERSION"${txtrst}; echo -e ""
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
 
-# Copy ParanoidPreferences overlays
-printf "Copying overlay preferences for $OVERLAYTARGET..."
-echo
-mkdir $REPACK/ota/system/etc/paranoid/preferences
-mkdir $REPACK/ota/system/etc/paranoid/preferences/images
-cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/app/* $REPACK/ota/system/app/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/addon.d $REPACK/ota/system/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/bin/* $REPACK/ota/system/bin/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/etc/* $REPACK/ota/system/etc/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/framework/* $REPACK/ota/system/framework/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/lib/* $REPACK/ota/system/lib/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/media/* $REPACK/ota/system/media/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/priv-app $REPACK/ota/system/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xml/* $REPACK/ota/system/
+
+
+if [ -n $ABIGEN ]; then
+	echo ${cya}"Packing in Pre-Built Libs for CPU Variant:${ylw}$ABIGEN"${txtrst}
+	cp ${ANDROID_BUILD_TOP}/vendor/bam/prebuilt/libs/$ABIGEN/libbypass.so $REPACK/ota/system/lib/libbypass.so
+	echo ""
+fi
 
 # Pack it up and sign
-printf "Zipping package..."
+echo -e ${grn}"Zipping package..."${txtrst}
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
-echo
-printf "Signing package..."
+echo -e ${grn}"Signing package..."${txtrst}
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx1024m \
-	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-jar $OUTDIR/host/$OUT_TARGET_HOST/framework/signapk.jar \
 	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
 	$REPACK/update.zip $OUTFILE
-echo
-printf "Cleaning up..."
+echo -e ${grn}"Cleaning up..."${txtrst}
 rm -rf $REPACK
-echo
 
 # Create a md5 checksum image of the repacked package
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
-echo
-echo "Package complete: $OUTFILE"
-cat $img.md5sum
-echo
+ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}'`
+echo -e ""; echo -e ${bldgrn}"Package complete:"${txtrst}
+echo -e ${cya}"ZIP:${ylw}  $img"${txtrst}
+echo -e ${cya}"MD5: ${ylw} `cat $img.md5sum | awk '{print $1}'`"${txtrst}
+echo -e ${cya}"SIZE:${ylw} $ZIPSIZE"${txtrst}
+MD5VAL=`cat $img.md5sum  | awk '{ print $1 }'`
+DEVICE=`echo -e $TARGET_PRODUCT | cut -d "_" -f 2`
 )
 
 exit 0
