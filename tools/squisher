@@ -60,6 +60,24 @@ cd $REPACK/ota/system/app
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
+# Copy PA things
+mkdir $REPACK/ota/system/etc/paranoid/preferences
+mkdir $REPACK/ota/system/etc/paranoid/preferences/images
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+
+# Copy BAM things
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/addon.d $REPACK/ota/system/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/app/* $REPACK/ota/system/app/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/bin/* $REPACK/ota/system/bin/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/etc/* $REPACK/ota/system/etc/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/framework/* $REPACK/ota/system/framework/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/lib/* $REPACK/ota/system/lib/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/media/* $REPACK/ota/system/media/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/priv-app/* $REPACK/ota/system/priv-app/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/vendor/* $REPACK/ota/system/vendor/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
+cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xml/* $REPACK/ota/system/
+
 # Fix build.prop
 $SED -i \
 	-e '/ro\.kernel\.android\.checkjni/d' \
