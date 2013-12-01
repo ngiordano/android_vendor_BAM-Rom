@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
+# Openssh
+PRODUCT_PACKAGES += \
+    BAMControl
+
 # AOKP Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/common
 
