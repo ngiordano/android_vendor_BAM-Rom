@@ -3,6 +3,4 @@
     <!-- Set default for disabling menu key. Option to
          disable does not work unless this is true. -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
-
-</string-array>
 </resources>
