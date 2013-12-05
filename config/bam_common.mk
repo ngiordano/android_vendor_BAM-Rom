@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
 # BAM
 PRODUCT_PACKAGES += \
   BAMControl \
+  BAMSetup \
   ScreenRecorder \
   libscreenrecorder
 
