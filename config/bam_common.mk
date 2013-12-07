@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
 
 # BAM
 PRODUCT_PACKAGES += \
+  BAMPapers \
   BAMControl \
   BAMSetup \
   ScreenRecorder \
