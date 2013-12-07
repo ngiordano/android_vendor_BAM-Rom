@@ -156,11 +156,6 @@ PRODUCT_PACKAGES += \
 # AOKP Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/bam/overlay/aokp/common
 
-### PARANOID ###
-# ParanoidAndroid Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
-
 # Allow device family to add overlays and use a same prop.conf
 ifneq ($(OVERLAY_TARGET),)
     PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(OVERLAY_TARGET)
@@ -168,12 +163,6 @@ ifneq ($(OVERLAY_TARGET),)
 else
     PA_CONF_SOURCE := $(TARGET_PRODUCT)
 endif
-
-# ParanoidAndroid Proprietary
-PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
-    vendor/bam/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
-    vendor/bam/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 BOARD := $(subst bam_,,$(TARGET_PRODUCT))
 
