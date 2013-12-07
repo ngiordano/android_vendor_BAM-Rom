@@ -19,5 +19,9 @@ PRODUCT_NAME := bam_mako
 GET_PROJECT_RMS := $(shell vendor/bam/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/bam/tools/addprojects.py $(PRODUCT_NAME))
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bam/prebuilt/common/bootanimation/768.zip:system/media/bootanimation.zip
+
 endif
 
