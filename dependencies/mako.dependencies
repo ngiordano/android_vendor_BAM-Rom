@@ -4,13 +4,13 @@
         "account": "CyanogenMod",
         "repository": "android_device_lge_mako",
         "target_path": "device/lge/mako",
-        "revision": "cm-10.2"
+        "revision": "cm-11.0"
     },
     {
         "remote": "github",
         "account": "zyonee",
         "repository": "android_kernel_google_msm",
         "target_path": "kernel/google/msm",
-        "revision": "cm-10.2"
+        "revision": "cm-11.0"
     }
 ]
