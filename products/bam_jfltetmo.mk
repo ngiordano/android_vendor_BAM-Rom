@@ -21,7 +21,7 @@ GET_PROJECT_ADDS := $(shell vendor/bam/tools/addprojects.py $(PRODUCT_NAME))
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/bam/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
+    vendor/bam/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
 
 endif
 
