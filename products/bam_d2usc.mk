@@ -19,5 +19,9 @@ PRODUCT_NAME := bam_d2usc
 GET_PROJECT_RMS := $(shell vendor/bam/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/bam/tools/addprojects.py $(PRODUCT_NAME))
 
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/bam/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
+
 endif
 

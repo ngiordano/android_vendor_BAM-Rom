@@ -18,22 +18,8 @@ PRODUCT_COPY_FILES += \
     vendor/bam/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
     vendor/bam/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
-# To deal with CM9 specifications
-# TODO: remove once all devices have been switched
-ifneq ($(TARGET_BOOTANIMATION_NAME),)
-TARGET_SCREEN_DIMENSIONS := $(subst -, $(space), $(subst x, $(space), $(TARGET_BOOTANIMATION_NAME)))
-ifeq ($(TARGET_SCREEN_WIDTH),)
-TARGET_SCREEN_WIDTH := $(word 2, $(TARGET_SCREEN_DIMENSIONS))
-endif
-ifeq ($(TARGET_SCREEN_HEIGHT),)
-TARGET_SCREEN_HEIGHT := $(word 3, $(TARGET_SCREEN_DIMENSIONS))
-endif
-endif
-
+# Boot animation include
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
-
-# clear TARGET_BOOTANIMATION_NAME in case it was set for CM9 purposes
-TARGET_BOOTANIMATION_NAME :=
 
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -60,7 +46,8 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
-PRODUCT_BOOTANIMATION := vendor/bam/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
+PRODUCT_COPY_FILES += \
+    vendor/bam/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
 #Embed superuser into settings 

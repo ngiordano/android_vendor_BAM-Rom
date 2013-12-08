@@ -19,9 +19,9 @@ PRODUCT_NAME := bam_jfltexx
 GET_PROJECT_RMS := $(shell vendor/bam/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/bam/tools/addprojects.py $(PRODUCT_NAME))
 
-# Bootanimation
+# boot animation
 PRODUCT_COPY_FILES += \
-    vendor/bam/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
+    vendor/bam/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 
 endif
 

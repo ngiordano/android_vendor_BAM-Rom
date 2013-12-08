@@ -60,11 +60,6 @@ cd $REPACK/ota/system/app
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
-# Copy PA things
-mkdir $REPACK/ota/system/etc/paranoid/preferences
-mkdir $REPACK/ota/system/etc/paranoid/preferences/images
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
-
 # Copy BAM things
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/addon.d $REPACK/ota/system/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/app/* $REPACK/ota/system/app/
