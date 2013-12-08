@@ -71,7 +71,6 @@ cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/media/* $REPACK/ota/system/m
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/priv-app/* $REPACK/ota/system/priv-app/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/vendor/* $REPACK/ota/system/vendor/
 cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xbin/* $REPACK/ota/system/xbin/
-cp -r $ANDROID_BUILD_TOP/vendor/bam/prebuilt/common/xml/* $REPACK/ota/system/
 
 # Fix build.prop
 $SED -i \
