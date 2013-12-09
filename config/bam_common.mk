@@ -169,12 +169,12 @@ PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 BAM_VERSION_MAJOR = 2
 BAM_VERSION_MINOR = 0
 BAM_VERSION_MAINTENANCE = $(shell date -u +%Y%m%d)
-BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR)_$(BAM_VERSION_MAINTENANCE)
+BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR)-$(BAM_VERSION_MAINTENANCE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=$(BAM_VERSION) \
     ro.bam.version=$(BAM_VERSION) \
-    ro.bam-rom.version=BAM-Rom_$(BAM_VERSION)_KitKat-$(BOARD) \
+    ro.bam-rom.version=BAM-$(BAM_VERSION)-KitKat-$(BOARD) \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
