@@ -172,6 +172,7 @@ BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.version=$(BAM_VERSION) \
     ro.bam.version=$(BAM_VERSION) \
     ro.bam-rom.version=BAM-Rom_v$(BAM_VERSION)_KitKat-$(BOARD) \
     ro.modversion=$(PA_VERSION) \
