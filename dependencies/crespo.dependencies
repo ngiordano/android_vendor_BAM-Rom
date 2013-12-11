@@ -1,0 +1,16 @@
+[
+    {
+        "remote":      "github",
+        "account":     "CyanogenMod",
+        "repository":  "android_kernel_samsung_crespo",
+        "target_path": "kernel/samsung/crespo",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "account":     "CyanogenMod",
+        "repository":  "android_device_samsung_crespo",
+        "target_path": "device/samsung/crespo",
+        "revision":    "cm-11.0"
+    }
+]
