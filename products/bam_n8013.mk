@@ -19,5 +19,9 @@ PRODUCT_NAME := bam_n8013
 GET_PROJECT_RMS := $(shell vendor/bam/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/bam/tools/addprojects.py $(PRODUCT_NAME))
 
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/bam/prebuilt/common/bootanimation/1280.zip:system/media/bootanimation.zip
+
 endif
 
