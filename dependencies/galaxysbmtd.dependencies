@@ -2,7 +2,7 @@
   {
     "account":    "CyanogenMod",
     "repository": "android_device_samsung_galaxysbmtd",
-    "target_path": "device/samsung/galaxysmtd",
+    "target_path": "device/samsung/galaxysbmtd",
     "revision":    "cm-11.0"
   },
   {
