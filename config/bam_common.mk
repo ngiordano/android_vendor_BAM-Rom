@@ -80,6 +80,10 @@ PRODUCT_COPY_FILES += \
     vendor/bam/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/bam/prebuilt/common/xbin/zipalign:system/xbin/zipalign
 
+# CM/WhisperSystems Packages
+PRODUCT_PACKAGES += \
+    WhisperPush
+
 # Gesture enabled JNI
 PRODUCT_COPY_FILES += \
     vendor/bam/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
