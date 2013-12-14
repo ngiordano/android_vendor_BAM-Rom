@@ -1,7 +1,7 @@
 [
   {
     "account":      "CyanogenMod",
-    "repository": "android_device_samsung_serran3gexx",
+    "repository": "android_device_samsung_serran3gxx",
     "target_path": "device/samsung/serrano3gxx",
     "revision":     "cm-11.0"
   },
