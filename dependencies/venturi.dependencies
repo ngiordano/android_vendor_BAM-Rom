@@ -15,7 +15,7 @@
     "account":      "iurnait",
     "repository":   "android_kernel_samsung_venturi",
     "target_path":  "kernel/samsung/venturi",
-    "revision":     "3.0Venturi-cm10.2"
+    "revision":     "cm-11.0"
   },
   {
     "account":      "CyanogenMod",
