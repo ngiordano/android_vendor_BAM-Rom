@@ -1,0 +1,25 @@
+[
+  {
+    "account":      "KFire-Android",
+    "repository":   "android_device_amazon_otter2",
+    "target_path":  "device/amazon/otter2",
+    "revision":     "cm-11.0"
+  },
+  {
+    "account":      "KFire-Android",
+    "repository":   "android_device_amazon_otter-common",
+    "target_path":  "device/amazon/otter-common",
+    "revision":     "cm-11.0"
+  },
+  {
+    "account":      "CyanogenMod",
+    "repository":   "android_device_amazon_omap4-common",
+    "target_path":  "device/amazon/omap4-common",
+    "revision":     "cm-11.0"
+  },
+    "account":      "CyanogenMod",
+    "repository":   "android_kernel_amazon_otter-common",
+    "target_path":  "kernel/amazon/otter-common",
+    "revision":     "cm-11.0"
+  }
+]
