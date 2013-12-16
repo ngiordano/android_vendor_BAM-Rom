@@ -2,19 +2,19 @@
   {
     "account":      "CyanogenMod",
     "repository":   "android_device_lge_g2-common",
-    "target_path":  "device/lge/g2-common"
+    "target_path":  "device/lge/g2-common",
     "revision":     "cm-11.0"
   },
    {
     "account":      "CyanogenMod",
     "repository":   "android_kernel_lge_msm8974",
-    "target_path":  "kernel/lge/msm8974"
+    "target_path":  "kernel/lge/msm8974",
     "revision":     "cm-11.0"
   },
   {
     "account":      "CyanogenMod",
     "repository":   "android_device_lge_d800",
-    "target_path":  "device/lge/d800"
+    "target_path":  "device/lge/d800",
     "revision":     "cm-11.0"
   }
 ]
