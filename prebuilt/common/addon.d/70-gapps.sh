@@ -8,7 +8,7 @@ list_files() {
 cat <<EOF
 app/Books.apk
 app/CalendarGoogle.apk
-app/ChromeBookmarksSyncAdapter.apk
+app/Chrome.apk
 app/CloudPrint2.apk
 app/Drive.apk
 app/GenieWidget.apk
@@ -23,12 +23,12 @@ app/Keep.apk
 app/LatinImeGoogle.apk
 app/Magazines.apk
 app/Maps.apk
-app/MediaUploader.apk
 app/Music2.apk
 app/PlayGames.apk
 app/PlusOne.apk
 app/QuickOffice.apk
 app/Street.apk
+app/SunBeam.apk
 app/Videos.apk
 app/YouTube.apk
 etc/g.prop
@@ -41,14 +41,13 @@ framework/com.google.android.maps.jar
 framework/com.google.android.media.effects.jar
 framework/com.google.widevine.software.drm.jar
 lib/libAppDataSearch.so
+lib/libchromeview.so
 lib/libdocscanner_image-v7a.so
 lib/libdocsimageutils.so
 lib/libearthandroid.so
 lib/libearthmobile.so
-lib/libfacetracker.so
 lib/libfilterframework_jni.so
 lib/libfilterpack_facedetect.so
-lib/libfrsdk.so
 lib/libgames_rtmp_jni.so
 lib/libgoogle_recognizer_jni_l.so
 lib/libjni_latinime.so
@@ -79,15 +78,14 @@ lib/libvideochat_jni.so
 lib/libvorbisencoder.so
 lib/libwebp_android.so
 lib/libwebrtc_audio_coding.so
-lib/libwebrtc_audio_preprocessing.so
 lib/libWVphoneAPI.so
 priv-app/CalendarProvider.apk
 priv-app/GoogleBackupTransport.apk
 priv-app/GoogleFeedback.apk
 priv-app/GoogleLoginService.apk
+priv-app/GoogleOneTimeInitializer.apk
 priv-app/GooglePartnerSetup.apk
 priv-app/GoogleServicesFramework.apk
-priv-app/OneTimeInitializer.apk
 priv-app/Phonesky.apk
 priv-app/PrebuiltGmsCore.apk
 priv-app/SetupWizard.apk
@@ -149,14 +147,17 @@ case "$1" in
     # Stub
   ;;
   post-restore)
-    # Remove the Pico TTS app
-    rm -f /system/app/PicoTts.apk
-
     # Remove the AOSP Stock Launcher after restore
     rm -f /system/priv-app/Launcher2.apk
     rm -f /system/priv-app/Launcher3.apk
     rm -f /system/app/Launcher2.apk
     rm -f /system/app/Launcher3.apk
+
+    # Remove the AOSP MMS app after restore
+    rm -f /system/priv-app/Mms.apk
+    
+    # Remove the AOSP Browser after restore
+    rm -f /system/app/Browser.apk
 
     # Remove the AOSP Keyboard after restore - NOT on Mini Builds
     rm -f /system/app/LatinIME.apk
@@ -171,8 +172,8 @@ case "$1" in
     rm -f /system/app/GoogleCloudPrint.apk
     rm -f /system/app/GoogleHangouts.apk
     rm -f /system/app/GoogleKeep.apk
-    rm -f /system/app/GoogleOneTimeInitializer.apk
     rm -f /system/app/GooglePlus.apk
+    rm -f /system/app/OneTimeInitializer.apk
     rm -f /system/app/PartnerBookmarksProvider.apk
     rm -f /system/app/QuickSearchBox.apk
     rm -f /system/app/Talk.apk
@@ -181,6 +182,7 @@ case "$1" in
     rm -f /system/priv-app/Calendar.apk
     rm -f /system/priv-app/GmsCore.apk
     rm -f /system/priv-app/GoogleNow.apk
+    rm -f /system/priv-app/OneTimeInitializer.apk
     rm -f /system/priv-app/QuickSearchBox.apk
     rm -f /system/priv-app/Vending.apk
 
@@ -189,9 +191,9 @@ case "$1" in
     rm -f /system/app/GoogleBackupTransport.apk
     rm -f /system/app/GoogleFeedback.apk
     rm -f /system/app/GoogleLoginService.apk
+    rm -f /system/app/GoogleOneTimeInitializer.apk
     rm -f /system/app/GooglePartnerSetup.apk
     rm -f /system/app/GoogleServicesFramework.apk
-    rm -f /system/app/OneTimeInitializer.apk
     rm -f /system/app/Phonesky.apk
     rm -f /system/app/PrebuiltGmsCore.apk
     rm -f /system/app/SetupWizard.apk
